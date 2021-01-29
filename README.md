@@ -1,10 +1,22 @@
 # HeadFirstDesignPatterns
 
 ## 概要
+ + Head First デザインパターン(オライリージャパン社)のコードレポジトリ
+  + Javaで書かれている内容をTypeScriptに書き直しながらオブジェクト指向の勉強
+
+## 目的
+ + オブジェクト指向
+ + TypeScriptの勉強
 
 
-## メモ
+## 開発メモ
+
+### Strategyパターン
+
+#### vol_1
+Duckクラス(抽象クラス)のメソッドを一部具象クラスでオーバーライドして記入。
+ここからインターフェイスなどを用いて、オブジェクト指向にしていく。
 
 
 ### 参考サイト
- + <a href="https://azu.github.io/promises-book/">JS Promiseの本</a>
+ + <a href=""></a>
