@@ -38,8 +38,9 @@ export class WeatherData implements Subject {
      */
     notifyObservers(): void{
         let i:number;
-        for (i = 0; i > this.observers.length; ++i ){
+        for (i = 0; i < this.observers.length; ++i ){
             const Observer: Observer = this.observers[i]
+
             Observer.update(this.temperature, this.humidity, this.pressure);
         }
     }
@@ -65,5 +66,4 @@ export class WeatherData implements Subject {
     getPressure() {
         return this.pressure;
     }
-
 }

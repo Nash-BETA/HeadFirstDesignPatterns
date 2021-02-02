@@ -2,9 +2,12 @@ import { DisplayElement } from "./DisplayElement";
 import { Observer } from "./Observer";
 import { WeatherData } from './WeatherData'
 
+/**
+ * ForecastDisplay - 天気予報
+ */
 export class ForecastDisplay implements Observer,DisplayElement{
     currentPressure:number = 29.92;
-    lastPressure:number =0 ;
+    lastPressure:number = 0 ;
     weatherData: WeatherData ;
 
     constructor(weatherData: WeatherData) {
@@ -12,8 +15,16 @@ export class ForecastDisplay implements Observer,DisplayElement{
         weatherData.registerObserver(this);
     }
 
+    /**
+     * update - 基準値の更新
+     * @param temp - 気温
+     * @param humidity - 湿度
+     * @param pressure - 気圧
+     */
     update(temp: number, humidity: number, pressure: number){
+        //元々の気圧を設定
         this.lastPressure = this.currentPressure;
+        //新しい気圧を設定
         this.currentPressure = pressure;
         this.display();
     }
