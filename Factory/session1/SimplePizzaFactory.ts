@@ -1,13 +1,14 @@
 import { CheesePizza } from './CheesePizza';
+import { PepperoniPizza } from './PepperoniPizza';
 import { Pizza } from './Pizza';
 
-class SimplePizzaFactory {
+export class SimplePizzaFactory {
     public createPizza(type:string):Pizza {
-        let pizza:Pizza;
+        let pizza;
 
         if (type == 'cheese') {
             pizza = new CheesePizza();
-        } else if (type.equals('pepperoni')) {
+        } else {
             pizza = new PepperoniPizza();
         }
 

@@ -1,14 +1,17 @@
-
+import { Pizza } from './Pizza';
+import { PizzaStore } from './PizzaStore';
+import { SimplePizzaFactory } from './SimplePizzaFactory'
 class Main {
 
-    public main(args: string[]):void {
-        SimplePizzaFactory factory = new SimplePizzaFactory();
-        PizzaStore store = new PizzaStore(factory);
+    public main():void {
+        let factory : SimplePizzaFactory = new SimplePizzaFactory();
+        let store: PizzaStore = new PizzaStore(factory);
 
-        Pizza pizza = store.orderPizza("cheese");
-        System.out.println("We ordered a " + pizza.getName() + "\n");
+        let pizza:Pizza = store.orderPizza("cheese");
+        console.log("注文をしたのは " + pizza.getName() + "\n");
 
-        pizza = store.orderPizza("veggie");
-        System.out.println("We ordered a " + pizza.getName() + "\n");
     }
 }
+
+const m = new Main();
+m.main();
