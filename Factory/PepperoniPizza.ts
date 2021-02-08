@@ -1,13 +1,13 @@
-import { Pizza } from "./Pizza";
+import { Pizza } from './Pizza';
 
 export class PepperoniPizza extends Pizza {
     constructor() {
         super();
-        this.name = "Pepperoni Pizza";
-        this.dough = "Crust";
-        this.sauce = "Marinara sauce";
-        this.toppings.push("Sliced Pepperoni");
-        this.toppings.push("Sliced Onion");
-        this.toppings.push("Grated parmesan cheese");
+        this.name = 'ペペロンチーノピザ';
+        this.dough = 'クリスピー';
+        this.sauce = 'マリナーラソース';
+        this.toppings.push('サラミ');
+        this.toppings.push('オニオン');
+        this.toppings.push('パルメザンチーズ');
     }
 }
