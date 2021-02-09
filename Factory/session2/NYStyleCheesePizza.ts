@@ -1,10 +1,10 @@
 import { Pizza } from './Pizza';
 
-export class ChicagoStyleCheesePizza extends Pizza {
+export class NYStyleCheesePizza extends Pizza {
 
     public constructor() {
         super();
-        this.name = 'シカゴチーズピザ';
+        this.name = 'チーズピザ';
         this.dough = 'レギュラークラスと';
         this.sauce = 'マリナーラピザソース';
         this.toppings.push('フレッシュモッツァレラチーズ');

@@ -6,7 +6,6 @@ export abstract class Pizza {
     sauce:string = '';
     toppings: string[] = [];
 
-
     /**
      * getName - 名前の受け取り
      */
