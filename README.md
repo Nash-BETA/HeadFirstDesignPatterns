@@ -10,6 +10,9 @@
 
 ## 開発メモ
 
+ + constructor.name
+   + https://zenn.dev/yuma_ito_bd/articles/1612b1f0c92cf4
+
 ### Strategy(戦略)パターン
  + 振る舞いに関するパターン
    + 一連のアルゴリズムをカプセル化し、動的なアルゴリズムの切替えを可能とします。
