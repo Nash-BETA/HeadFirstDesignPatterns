@@ -1,14 +1,14 @@
 
 export class Light {
 
-    constructor() {
-    }
+	constructor() {
+	}
 
-    on():void {
-        console.log('光を灯す');
-    }
+	on():void {
+		console.log('光を灯す');
+	}
 
-    off(): void {
-        console.log('光を消す');
-    }
+	off(): void {
+		console.log('光を消す');
+	}
 }

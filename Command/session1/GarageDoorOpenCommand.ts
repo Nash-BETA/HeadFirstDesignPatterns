@@ -2,13 +2,13 @@ import { Command } from "./Command";
 import { GarageDoor } from "./GarageDoor";
 
 export class GarageDoorOpenCommand implements Command {
-    garageDoor?: GarageDoor;
+	garageDoor?: GarageDoor;
 
-    constructor(garageDoor: GarageDoor) {
-        this.garageDoor = garageDoor;
-    }
+	constructor(garageDoor: GarageDoor) {
+		this.garageDoor = garageDoor;
+	}
 
-    execute():void {
-        this.garageDoor?.up();
-    }
+	execute():void {
+		this.garageDoor?.up();
+	}
 }
